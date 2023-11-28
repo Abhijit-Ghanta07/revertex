@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --primary: #5c45fd;
+  --secondary: #2a2b6a;
+  --light: #efedff;
+  --dark: #161616;
+  --text: #8a79ff;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.letter-space {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text) !important;
+}
+.btn-primary {
+  background-color: var(--primary);
+  color: #fff;
+}
+.btn-outline-primary {
+  border-color: var(--primary);
+  color: #fff;
+}
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+}
+.btn-primary:hover {
+  background-color: var(--text);
+}
+header {
+  background-color: var(--dark);
+}
+#header_link_list li a {
+  transition: 0.5s ease;
+}
+#header_link_list li a:hover {
+  color: var(--text) !important;
+}
+#text_rotate span {
+  display: inline-block;
+  rotate: 180deg;
+  unicode-bidi: bidi-override;
+  color: var(--primary);
+}
+
+.offcanvas {
+  background-color: var(--dark);
+}
+.offcanvas .btn-close {
+  color: var(--light);
+  background-color: var(--light);
+  stroke: var(--light);
+}
+#text_greadient span {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.hero {
+  background: var(--dark);
+}
+
+.hero_client-img {
+  width: 35px;
+  height: 35px;
+  margin-left: -1rem;
+}
+.hero_client-img:nth-of-type(1) {
+  margin: 0;
+}
+#company_wrapper {
+  /* background: radial-gradient(
+    circle,
+    transparent 80%,
+    rgba(222, 222, 222, 0.619)
+  ); */
+}
+.company_card {
+  padding: 10px 40px;
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.company_card:hover {
+  background-color: var(--light);
+}
+.company_card:hover p {
+  color: var(--primary) !important;
+}
+.grid .grid-item,
+.box {
+  padding: 1rem 0.7rem;
+  border-radius: 10px;
+  box-shadow: -1px 0 1px rgba(183, 183, 183, 0.413);
+}
+.cup-icon {
+  background: rgba(214, 214, 214, 0.279);
+}
+.cup-icon svg {
+  width: 5rem;
+  height: 3rem;
+  margin: 0 auto;
+  transform: rotate(30deg);
+}
+.grid-item {
+  transition: 0.4s ease-in-out;
+}
+.grid-item .hover_btn {
+  transition: 0.4s ease-in-out;
+}
+.services .grid-item .hover_btn:hover {
+  background: #fff;
+  color: #000 !important;
+}
+
+.project_img {
+  max-width: 100%;
+  min-height: 300px;
+  cursor: pointer;
+}
+.project_img:hover + #hover_text {
+  opacity: 1;
+}
+#hover_text {
+  opacity: 0;
+  font-size: 1.1rem;
+  padding: 1rem;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  transition: 0.4s ease-in-out;
+}
+.tick {
+  color: var(--primary);
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff45;
+  border-radius: 50%;
+}
+.dot:is(.active) {
+  background-color: #fff;
+}
+#footer-icon_wrapper span {
+  transition: 0.4s ease-in-out;
+}
+#footer-icon_wrapper span:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+  .grid-item:hover {
+    transform: translateY(-20px);
+  }
+}
