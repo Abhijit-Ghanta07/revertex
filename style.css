@@ -166,6 +166,11 @@ header {
 .dot:is(.active) {
   background-color: #fff;
 }
+.footer {
+  background-image: url("./assets/stars.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 #footer-icon_wrapper span {
   transition: 0.4s ease-in-out;
 }
