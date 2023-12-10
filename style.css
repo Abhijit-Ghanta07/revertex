@@ -11,6 +11,10 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 .letter-space {
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -73,12 +77,23 @@ header {
 .hero_client-img:nth-of-type(1) {
   margin: 0;
 }
+#star-bg {
+  background: url("./assets/stars.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  backdrop-filter: blur(4px);
+}
 #company_wrapper {
-  /* background: radial-gradient(
-    circle,
-    transparent 80%,
-    rgba(222, 222, 222, 0.619)
-  ); */
+  animation: slide 15s ease-in-out alternate infinite;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-70%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 .company_card {
   padding: 10px 40px;
